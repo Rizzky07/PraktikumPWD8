@@ -13,7 +13,7 @@
         font-family: Arial, Helvetica, sans-serif;
       }
       body {
-        height: 2500px; /* Konten lebih dari 2000px */
+        height: 2500px;
         background: linear-gradient(to bottom, #ffffff, #cccccc);
         padding: 20px;
       }
@@ -83,7 +83,7 @@
         color: white;
         padding: 13px;
       }
-      .scroll-top {
+      .scrolatas {
         position: fixed;
         bottom: 20px;
         right: 20px;
@@ -97,7 +97,7 @@
         opacity: 0;
         transition: opacity 0.3s;
       }
-      .scroll-top:hover {
+      .scrolatas:hover {
         opacity: 1;
       }
       .show {
@@ -123,7 +123,7 @@
         <br />
         <img
           src="Rafinha-N-Hansi-flick-ngamuk.jpg"
-          alt="Laga UCL Barca vs Benfica"
+          alt="Laga Barca vs Real Betis"
         /><br /><br />
         <p>
           Hansi Flick kini tengah menjalani musim perdananya bersama Barcelona.
@@ -280,18 +280,18 @@
       <p>&copy; 2025 Website Seputar Barcelona</p>
     </footer>
 
-    <button class="scroll-top" onclick="scrollToTop()">&#8679;</button>
+    <button class="scrolatas" onclick="scrollKeAtas()">&#8679;</button>
 
     <script>
-      const scrollTopBtn = document.querySelector(".scroll-top");
+      const tombolkeatas = document.querySelector(".scrolatas");
       window.addEventListener("scroll", () => {
         if (window.scrollY > 500) {
-          scrollTopBtn.classList.add("show");
+          tombolkeatas.classList.add("show");
         } else {
-          scrollTopBtn.classList.remove("show");
+          tombolkeatas.classList.remove("show");
         }
       });
-      function scrollToTop() {
+      function scrollKeAtas() {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
     </script>
